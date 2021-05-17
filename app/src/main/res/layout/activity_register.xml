@@ -9,7 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -21,38 +25,85 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Daftar Pengguna"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Nama Pengguna"
+            android:background="@drawable/custom_input"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Email"
+            android:background="@drawable/custom_input"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Kata Sandi"
+            android:background="@drawable/custom_input"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Ketik Ulang Kata Sandi"
+            android:background="@drawable/custom_input"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun? " />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Masuk"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,4 +11,30 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings used for fragments sampah -->
+    <string name="dashboard_fragment_sampah_title">Daftar Sampah Plastik</string>
+    <string name="dashboard_fragment_sampah_desc">Berikut ini adalah daftar sampah plastik yang dapat ditukar pada Sampah-Ku</string>
+    <string name="sampah1">Gelas Mineral</string>
+    <string name="harga_sampah1">2.500/Kg</string>
+    <string name="sampah2">Botol Mineral</string>
+    <string name="harga_sampah2">3.500/Kg</string>
+    <string name="sampah3">Galon</string>
+    <string name="harga_sampah3">2.000/Kg</string>
+    <string name="sampah4">Jerigen</string>
+    <string name="harga_sampah4">2.500/Kg</string>
+    <string name="sampah5">Tutup Botol</string>
+    <string name="harga_sampah5">20.500/Kg</string>
+    <string name="sampah6">Kresek</string>
+    <string name="harga_sampah6">200/Kg</string>
+    <string name="sampah7">Plastik Putih</string>
+    <string name="harga_sampah7">600/Kg</string>
+    <string name="sampah8">Plastik Sablon</string>
+    <string name="harga_sampah8">250/Kg</string>
+    <string name="sampah9">Ember Warna</string>
+    <string name="harga_sampah9">1.000/Kg</string>
+    <string name="sampah10">Ember Putih</string>
+    <string name="harga_sampah10">2.500/Kg</string>
+    <string name="sampah11">Ember Hitam</string>
+    <string name="harga_sampah11">850/Kg</string>
 </resources>

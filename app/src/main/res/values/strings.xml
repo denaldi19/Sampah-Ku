@@ -37,4 +37,16 @@
     <string name="harga_sampah10">2.500/Kg</string>
     <string name="sampah11">Ember Hitam</string>
     <string name="harga_sampah11">850/Kg</string>
+
+    <!-- Strings used for fragments akun -->
+    <string name="user1">Fadel Irham</string>
+    <string name="user2">Denaldi Prima Fadlurrahman</string>
+    <string name="jumlah_poin">20.000</string>
+    <string name="ket_poin">Poin</string>
+    <string name="menu1_title">Ubah Profil</string>
+    <string name="menu2_title">Panduan</string>
+    <string name="menu3_title">Kebijakan Privasi</string>
+    <string name="menu4_title">Versi App</string>
+    <string name="versi_app">1.0.0</string>
+    <string name="menu5_title">Keluar Akun</string>
 </resources>

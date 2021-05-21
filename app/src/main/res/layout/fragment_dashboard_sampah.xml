@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardSampah">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:background="@drawable/borderdashboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dashboard_fragment_sampah_title"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dashboard_fragment_sampah_desc"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_gelas"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/gelasmineral"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah1"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah1"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_botol"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/botol"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah2"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah2"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+
+                    <ImageView
+                        android:id="@+id/sampah_galon"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/galon"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah3"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah3"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_jerigen"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/jerigen"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah4"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah4"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_tutup_botol"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/tutupbotol"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah5"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah5"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_kresek"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/kresek"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah6"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah6"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+
+                    <ImageView
+                        android:id="@+id/sampah_plastik_putih"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/plastikputih"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah7"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah7"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_plastik_putih_sablon"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/sablonputihplastik"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah8"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah8"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+
+                    <ImageView
+                        android:id="@+id/sampah_ember_warna"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/emberwarna"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah9"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah9"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+                    <ImageView
+                        android:id="@+id/sampah_ember_putih"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/emberputih"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah10"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah10"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="30dp"
+                    android:padding="20dp"
+                    android:background="@drawable/borderdashboard">
+
+
+                    <ImageView
+                        android:id="@+id/sampah_ember_hitam"
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/emberhitam"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampah11"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_sampah11"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

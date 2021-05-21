@@ -15,11 +15,13 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp">
 
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/SampahKuLogo" />
+            app:srcCompat="@drawable/sampahkulogo"
+            />
 
         <TextView
             android:id="@+id/textView4"
@@ -31,7 +33,7 @@
             android:textSize="20sp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/nama_register"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="5dp"
@@ -42,47 +44,47 @@
             android:background="@drawable/custom_input"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/email_register"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="5dp"
             android:paddingLeft="10dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType=""
             android:hint="Email"
             android:background="@drawable/custom_input"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/sandi_register"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="5dp"
             android:paddingLeft="10dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:hint="Kata Sandi"
             android:background="@drawable/custom_input"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/sandi2_register"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="5dp"
             android:paddingLeft="10dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:hint="Ketik Ulang Kata Sandi"
             android:background="@drawable/custom_input"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/daftar_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:textColor="#FFFFFF"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"/>
+            android:background="@drawable/custom_button"
+            android:text="daftar"
+            android:textColor="#FFFFFF" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,7 +98,7 @@
                 android:text="Sudah Punya Akun? " />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/masuk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -105,5 +107,14 @@
                 android:textStyle="bold"/>
         </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"/>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

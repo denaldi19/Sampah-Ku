@@ -100,13 +100,20 @@
     <string name="jwb_ya">Ya</string>
     <string name="jwb_tdk">Tidak</string>
 
+    <!-- Strings used for notifikasi -->
+    <string name="fragment_tukar_poin_gopay_title">Saldo GoPay Rp 10.000</string>
+    <string name="saldo_gopay1">10.000 Poin/pcs</string>
+
     <!-- Strings used for tools -->
     <string name="btn_tutup">TUTUP</string>
     <string name="btn_kembali">KEMBALI</string>
     <string name="btn_simpan">SIMPAN</string>
     <string name="btn_batal_simpan">BATAL SIMPAN</string>
+    <string name="btn_batal">BATAL</string>
+    <string name="btn_tukar_poin">TUKAR POIN</string>
     <string name="txt_nama">Nama Pengguna</string>
     <string name="txt_email">Alamat Email</string>
     <string name="txt_password">Kata Sandi</string>
     <string name="txt_repassword">Ketik Ulang Kata Sandi</string>
+    <string name="txt_no_hp">Nomor HP</string>
 </resources>

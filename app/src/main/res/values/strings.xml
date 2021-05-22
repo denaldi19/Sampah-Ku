@@ -105,6 +105,11 @@
     <string name="fragment_tukar_poin_gopay_title">Saldo GoPay Rp 10.000</string>
     <string name="saldo_gopay1">10.000 Poin/pcs</string>
 
+    <!-- Strings used for fragment tukar poin gopay berhasil -->
+    <string name="fragment_tkr_gopay_berhasil_title">Tukar Poin Berhasil!</string>
+    <string name="txt_trmkasih">TERIMA KASIH</string>
+    <string name="txt_cek_poin_desc">Silahkan Anda cek kembali pada akun GoPay Anda, untuk memastikan saldo. Maksimal 3 hari kerja untuk proses transfer.</string>
+
     <!-- Strings used for tools -->
     <string name="btn_tutup">TUTUP</string>
     <string name="btn_kembali">KEMBALI</string>
@@ -112,6 +117,7 @@
     <string name="btn_batal_simpan">BATAL SIMPAN</string>
     <string name="btn_batal">BATAL</string>
     <string name="btn_tukar_poin">TUKAR POIN</string>
+    <string name="btn_lht_dftr_transc">LIHAT DAFTAR TRANSAKSI</string>
     <string name="txt_nama">Nama Pengguna</string>
     <string name="txt_email">Alamat Email</string>
     <string name="txt_password">Kata Sandi</string>

@@ -59,4 +59,12 @@
     <string name="kebijakan_no2_text">Kami tidak menjamin keamanan basis data kami dan kami juga tidak menjamin bahwa data yang Anda berikan tidak akan disimpan atau terganggu dalam proses pengiriman informasi. Setiap pengiriman informasi oleh Anda kepada kami merupakan tanggung jawab Anda sendiri. Anda tidak boleh mengungkapkan sandi Anda kepada siapa pun. Satu hal yang juga perlu kami sampaikan, bahwa bagaimana pun keamanan dari sebuah teknologi, tidak ada sistem yang tidak bisa ditembus.</string>
     <string name="kebijakan_no3">3. Penggunaan Informasi yang Kami Kumpulkan</string>
     <string name="kebijakan_no3_text">Kami menggunakan email, nama, dan sandi akun Anda untuk memverifikasi kepemilikan Anda atas suatu akun, untuk berkomunikasi dengan Anda sehubungan dengan penggunaan layanan dan untuk memberikan Anda informasi mengenai situs Sampah-Ku. Kami juga dapat menggunakan email Anda untuk mengirim pesan.</string>
+
+    <!-- Strings used for fragments panduan -->
+    <string name="fragment_panduan_title">Panduan</string>
+    <string name="pan_menu1_title">Registrasi Akun</string>
+    <string name="pan_menu2_title">Tukar Sampah Menjadi Poin</string>
+    <string name="pan_menu3_title">Beli Produk Daur Ulang</string>
+    <string name="pan_menu4_title">Tukar Poin Menjadi Kupon</string>
+    <string name="pan_menu5_title">Gabung Menjadi Mitra</string>
 </resources>

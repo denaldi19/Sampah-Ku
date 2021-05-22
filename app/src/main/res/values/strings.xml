@@ -49,4 +49,14 @@
     <string name="menu4_title">Versi App</string>
     <string name="versi_app">1.0.0</string>
     <string name="menu5_title">Keluar Akun</string>
+
+    <!-- Strings used for fragments kebijakan privasi -->
+    <string name="fragment_kebijakan_privasi_title">Kebijakan Privasi</string>
+    <string name="kebijakan_text">Ketentuan yang memuat di dalam Kebijakan Privasi berikut, menjelaskan bagaimana kami (PT Sampah-Ku) mengumpulkan, dan menggunakan informasi pribadi Anda yang kami dapatkan dari penggunaan layanan kami. Menggunakan atau mengunjungi layanan Sampah-Ku, maka Anda dianggap telah mengetahui dan menyetujui kebijakan privasi ini. Berikut kami uraikan ketentuan Kebijakan Privasi dari layanan kami :</string>
+    <string name="kebijakan_no1">1. Informasi yang Kami Kumpulkan</string>
+    <string name="kebijakan_no1_text">Kami mengumpulkan informasi Pribadi tertentu dari Anda agar layanan kami dapat berjalan sebagaimana mestinya untuk Anda akses dan gunakan, contoh: untuk dapat mengakses fitur-fitur yang lebih lengkap, Anda diharuskan mendaftar dan melengkapi data pribadi Anda terlebih dahulu.</string>
+    <string name="kebijakan_no2">2. Keamanan</string>
+    <string name="kebijakan_no2_text">Kami tidak menjamin keamanan basis data kami dan kami juga tidak menjamin bahwa data yang Anda berikan tidak akan disimpan atau terganggu dalam proses pengiriman informasi. Setiap pengiriman informasi oleh Anda kepada kami merupakan tanggung jawab Anda sendiri. Anda tidak boleh mengungkapkan sandi Anda kepada siapa pun. Satu hal yang juga perlu kami sampaikan, bahwa bagaimana pun keamanan dari sebuah teknologi, tidak ada sistem yang tidak bisa ditembus.</string>
+    <string name="kebijakan_no3">3. Penggunaan Informasi yang Kami Kumpulkan</string>
+    <string name="kebijakan_no3_text">Kami menggunakan email, nama, dan sandi akun Anda untuk memverifikasi kepemilikan Anda atas suatu akun, untuk berkomunikasi dengan Anda sehubungan dengan penggunaan layanan dan untuk memberikan Anda informasi mengenai situs Sampah-Ku. Kami juga dapat menggunakan email Anda untuk mengirim pesan.</string>
 </resources>

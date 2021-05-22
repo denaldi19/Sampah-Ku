@@ -28,65 +28,80 @@
             android:background="@drawable/custom_input"
             android:layout_marginBottom="15sp" />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:background="@drawable/custom_input">
+            android:layout_height="550dp"
+            android:layout_marginBottom="15dp">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/fragment_kebijakan_privasi_title"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="15dp" />
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/custom_input">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_text"
-                android:layout_marginBottom="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_kebijakan_privasi_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no1"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_text"
+                    android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no1_text"
-                android:layout_marginBottom="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no1"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no2"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no1_text"
+                    android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no2_text"
-                android:layout_marginBottom="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no2"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no3"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no2_text"
+                    android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/kebijakan_no3_text"
-                android:layout_marginBottom="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no3"
+                    android:textStyle="bold" />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kebijakan_no3_text"
+                    android:layout_marginBottom="10dp" />
 
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_ttp_kebijakan"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/btn_tutup"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custom_button" />
 
     </LinearLayout>
 </FrameLayout>

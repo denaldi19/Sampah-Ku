@@ -95,6 +95,11 @@
     <!-- Strings used for fragments ubah profil -->
     <string name="fragment_ubah_profil_title">Ubah Profil Anda</string>
 
+    <!-- Strings used for notifikasi -->
+    <string name="notif_yakin">Apakah Anda Yakin?</string>
+    <string name="jwb_ya">Ya</string>
+    <string name="jwb_tdk">Tidak</string>
+
     <!-- Strings used for tools -->
     <string name="btn_tutup">TUTUP</string>
     <string name="btn_kembali">KEMBALI</string>

@@ -41,6 +41,10 @@
     <!-- Strings used for fragments akun -->
     <string name="user1">Fadel Irham</string>
     <string name="user2">Denaldi Prima Fadlurrahman</string>
+    <string name="email1">irhamfadel@gmail.com</string>
+    <string name="email2">denal.prima@student.umn.ac.id</string>
+    <string name="pass1">********</string>
+    <string name="pass2">********</string>
     <string name="jumlah_poin">20.000</string>
     <string name="ket_poin">Poin</string>
     <string name="menu1_title">Ubah Profil</string>
@@ -84,10 +88,20 @@
     <string name="fragment_panduan_tukar_poin_title">Tukar Poin Menjadi Kupon</string>
     <string name="pan_tukar_poin_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis mi vitae felis interdum tristique. Morbi fermentum, orci vitae sollicitudin semper, eros arcu pulvinar nisi, nec egestas nulla ante ut augue. In velit dolor, vulputate vel vehicula et, elementum ut libero. Proin imperdiet venenatis dapibus. Nunc accumsan diam vitae tellus mattis, sed hendrerit tortor consequat. Nulla vitae massa leo. Vivamus in elit vitae neque suscipit efficitur ac blandit velit. Donec eget enim convallis, cursus tellus vitae, luctus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu volutpat, scelerisque nulla in, pulvinar tellus. In vel pulvinar libero, vel semper enim. Quisque sed faucibus augue. Sed quis enim tempus, tincidunt urna in, convallis purus. Integer id pellentesque ligula. Duis nec elementum justo. Donec interdum molestie velit, sit amet pretium tellus. Sed vulputate ante lectus, in faucibus sapien rutrum quis. Cras varius nulla elit. Nulla varius vulputate nunc vel fermentum. Maecenas porttitor eros in placerat commodo..</string>
 
-    <!-- Strings used for fragments gabung mitra -->
+    <!-- Strings used for fragments panduan gabung mitra -->
     <string name="fragment_panduan_gabung_title">Gabung Menjadi Mitra</string>
     <string name="pan_gabung_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis mi vitae felis interdum tristique. Morbi fermentum, orci vitae sollicitudin semper, eros arcu pulvinar nisi, nec egestas nulla ante ut augue. In velit dolor, vulputate vel vehicula et, elementum ut libero. Proin imperdiet venenatis dapibus. Nunc accumsan diam vitae tellus mattis, sed hendrerit tortor consequat. Nulla vitae massa leo. Vivamus in elit vitae neque suscipit efficitur ac blandit velit. Donec eget enim convallis, cursus tellus vitae, luctus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu volutpat, scelerisque nulla in, pulvinar tellus. In vel pulvinar libero, vel semper enim. Quisque sed faucibus augue. Sed quis enim tempus, tincidunt urna in, convallis purus. Integer id pellentesque ligula. Duis nec elementum justo. Donec interdum molestie velit, sit amet pretium tellus. Sed vulputate ante lectus, in faucibus sapien rutrum quis. Cras varius nulla elit. Nulla varius vulputate nunc vel fermentum. Maecenas porttitor eros in placerat commodo..</string>
 
+    <!-- Strings used for fragments ubah profil -->
+    <string name="fragment_ubah_profil_title">Ubah Profil Anda</string>
+
     <!-- Strings used for tools -->
     <string name="btn_tutup">TUTUP</string>
+    <string name="btn_kembali">KEMBALI</string>
+    <string name="btn_simpan">SIMPAN</string>
+    <string name="btn_batal_simpan">BATAL SIMPAN</string>
+    <string name="txt_nama">Nama Pengguna</string>
+    <string name="txt_email">Alamat Email</string>
+    <string name="txt_password">Kata Sandi</string>
+    <string name="txt_repassword">Ketik Ulang Kata Sandi</string>
 </resources>

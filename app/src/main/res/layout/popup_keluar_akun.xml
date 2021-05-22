@@ -18,14 +18,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/notif_yakin"
+            android:text="@string/notif_yakin_keluar"
             android:gravity="center"
             android:textSize="23sp"
             android:layout_marginBottom="17sp"
             />
 
         <TextView
-            android:id="@+id/txt_ubah_profil_ya"
+            android:id="@+id/txt_keluar_akun_ya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/jwb_ya"
@@ -33,7 +33,7 @@
             android:layout_marginBottom="10sp"/>
 
         <TextView
-            android:id="@+id/txt_ubah_profil_tdk"
+            android:id="@+id/txt_keluar_akun_tdk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/jwb_tdk"

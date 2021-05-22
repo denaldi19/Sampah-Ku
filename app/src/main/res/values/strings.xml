@@ -110,6 +110,10 @@
     <string name="txt_trmkasih">TERIMA KASIH</string>
     <string name="txt_cek_poin_desc">Silahkan Anda cek kembali pada akun GoPay Anda, untuk memastikan saldo. Maksimal 3 hari kerja untuk proses transfer.</string>
 
+    <!-- Strings used for fragment tukar poin gopay berhasil -->
+    <string name="fragment_beli_prdk_tas_title">Tas Plastik Pelangi</string>
+    <string name="hrg_prdk1">5.000 Poin/pcs</string>
+
     <!-- Strings used for tools -->
     <string name="btn_tutup">TUTUP</string>
     <string name="btn_kembali">KEMBALI</string>
@@ -118,9 +122,16 @@
     <string name="btn_batal">BATAL</string>
     <string name="btn_tukar_poin">TUKAR POIN</string>
     <string name="btn_lht_dftr_transc">LIHAT DAFTAR TRANSAKSI</string>
+    <string name="btn_psn">PESAN SEKARANG</string>
+    <string name="btn_min">-</string>
+    <string name="btn_plus">+</string>
     <string name="txt_nama">Nama Pengguna</string>
     <string name="txt_email">Alamat Email</string>
     <string name="txt_password">Kata Sandi</string>
     <string name="txt_repassword">Ketik Ulang Kata Sandi</string>
     <string name="txt_no_hp">Nomor HP</string>
+    <string name="txt_penerima">Nama penerima</string>
+    <string name="txt_alamat">Alamat lengkap penerima</string>
+    <string name="txt_jmlh">Jumlah</string>
+    <string name="txt_jmlh_prdk">1</string>
 </resources>

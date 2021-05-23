@@ -1,6 +1,7 @@
 package com.example.sampah_ku;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,15 +15,13 @@ import android.widget.LinearLayout;
 public class DashboardAkun extends Fragment {
 
     LinearLayout menuUbah, menuPanduan, menuKebijakan, menuVersi, menuKeluar;
-    private AlertDialog.Builder dialogBuilder;
-    private AlertDialog dialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_dashboard_akun, container, false);
-        View v = inflater.inflate(R.layout.fragment_dahsboard_home, container, false);
+        View v = inflater.inflate(R.layout.fragment_dashboard_akun, container, false);
 
         menuUbah = v.findViewById(R.id.menuUbah);
         menuPanduan = v.findViewById(R.id.menuPanduan);
@@ -59,23 +58,6 @@ public class DashboardAkun extends Fragment {
                 KebijakanPrivasi kebijakanPrivasi = new KebijakanPrivasi();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.mainLayout, kebijakanPrivasi).commit();
-
-            }
-        });
-
-        menuVersi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Tidak ada fungsi
-
-            }
-        });
-
-        menuKeluar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // Layout popup
 
             }
         });

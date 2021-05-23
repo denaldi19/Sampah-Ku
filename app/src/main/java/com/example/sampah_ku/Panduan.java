@@ -1,17 +1,25 @@
 package com.example.sampah_ku;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+
+import static androidx.core.content.ContextCompat.getSystemService;
 
 public class Panduan extends Fragment {
 
@@ -27,6 +35,10 @@ public class Panduan extends Fragment {
 
         btnKembali = v.findViewById(R.id.btn_panduan_kmbli);
         menuRegis = v.findViewById(R.id.menuRegis);
+        menuTukar = v.findViewById(R.id.menuTukar);
+        menuBeli = v.findViewById(R.id.menuBeli);
+        menuPoin = v.findViewById(R.id.menuPoin);
+        menuGabung = v.findViewById(R.id.menuGabung);
 
         btnKembali.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +55,12 @@ public class Panduan extends Fragment {
             @Override
             public void onClick(View v) {
 
-                View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+                LayoutInflater inflater = (LayoutInflater)
+                        getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_registrasi, null);
+
+                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
+                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
 
                 // define your view here that found in popup_layout
                 // for example let consider you have a button
@@ -52,8 +68,166 @@ public class Panduan extends Fragment {
                 //Button btn = (Button) popupView.findViewById(R.id.button);
 
                 // finally show up your popwindow
-                popupWindow.showAsDropDown(popupView, 0, 0);
+                //popupWindow.showAsDropDown(popupView);
 
+                int width = LinearLayout.LayoutParams.MATCH_PARENT;
+                int height = LinearLayout.LayoutParams.MATCH_PARENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                // dismiss the popup window when touched
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
+            }
+        });
+
+        menuTukar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater inflater = (LayoutInflater)
+                        getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_tukar_sampah, null);
+
+                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
+                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+
+                // define your view here that found in popup_layout
+                // for example let consider you have a button
+
+                //Button btn = (Button) popupView.findViewById(R.id.button);
+
+                // finally show up your popwindow
+                //popupWindow.showAsDropDown(popupView);
+
+                int width = LinearLayout.LayoutParams.MATCH_PARENT;
+                int height = LinearLayout.LayoutParams.MATCH_PARENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                // dismiss the popup window when touched
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
+            }
+        });
+
+        menuBeli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater inflater = (LayoutInflater)
+                        getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_beli_produk, null);
+
+                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
+                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+
+                // define your view here that found in popup_layout
+                // for example let consider you have a button
+
+                //Button btn = (Button) popupView.findViewById(R.id.button);
+
+                // finally show up your popwindow
+                //popupWindow.showAsDropDown(popupView);
+
+                int width = LinearLayout.LayoutParams.MATCH_PARENT;
+                int height = LinearLayout.LayoutParams.MATCH_PARENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                // dismiss the popup window when touched
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
+            }
+        });
+
+        menuPoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater inflater = (LayoutInflater)
+                        getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_tukar_poin, null);
+
+                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
+                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+
+                // define your view here that found in popup_layout
+                // for example let consider you have a button
+
+                //Button btn = (Button) popupView.findViewById(R.id.button);
+
+                // finally show up your popwindow
+                //popupWindow.showAsDropDown(popupView);
+
+                int width = LinearLayout.LayoutParams.MATCH_PARENT;
+                int height = LinearLayout.LayoutParams.MATCH_PARENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                // dismiss the popup window when touched
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
+            }
+        });
+
+        menuGabung.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater inflater = (LayoutInflater)
+                        getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_gabung_mitra, null);
+
+                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
+                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+
+                // define your view here that found in popup_layout
+                // for example let consider you have a button
+
+                //Button btn = (Button) popupView.findViewById(R.id.button);
+
+                // finally show up your popwindow
+                //popupWindow.showAsDropDown(popupView);
+
+                int width = LinearLayout.LayoutParams.MATCH_PARENT;
+                int height = LinearLayout.LayoutParams.MATCH_PARENT;
+                boolean focusable = true; // lets taps outside the popup also dismiss it
+                PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+                popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+
+                // dismiss the popup window when touched
+                popupView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        popupWindow.dismiss();
+                        return true;
+                    }
+                });
             }
         });
 

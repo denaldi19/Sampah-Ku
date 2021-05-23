@@ -69,7 +69,7 @@
     <string name="pan_menu1_title">Registrasi Akun</string>
     <string name="pan_menu2_title">Tukar Sampah Menjadi Poin</string>
     <string name="pan_menu3_title">Beli Produk Daur Ulang</string>
-    <string name="pan_menu4_title">Tukar Poin Menjadi Kupon</string>
+    <string name="pan_menu4_title">Tukar Poin Menjadi Saldo</string>
     <string name="pan_menu5_title">Gabung Menjadi Mitra</string>
 
     <!-- Strings used for fragments panduan regristasi akun -->
@@ -85,7 +85,7 @@
     <string name="pan_beli_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis mi vitae felis interdum tristique. Morbi fermentum, orci vitae sollicitudin semper, eros arcu pulvinar nisi, nec egestas nulla ante ut augue. In velit dolor, vulputate vel vehicula et, elementum ut libero. Proin imperdiet venenatis dapibus. Nunc accumsan diam vitae tellus mattis, sed hendrerit tortor consequat. Nulla vitae massa leo. Vivamus in elit vitae neque suscipit efficitur ac blandit velit. Donec eget enim convallis, cursus tellus vitae, luctus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu volutpat, scelerisque nulla in, pulvinar tellus. In vel pulvinar libero, vel semper enim. Quisque sed faucibus augue. Sed quis enim tempus, tincidunt urna in, convallis purus. Integer id pellentesque ligula. Duis nec elementum justo. Donec interdum molestie velit, sit amet pretium tellus. Sed vulputate ante lectus, in faucibus sapien rutrum quis. Cras varius nulla elit. Nulla varius vulputate nunc vel fermentum. Maecenas porttitor eros in placerat commodo..</string>
 
     <!-- Strings used for fragments panduan tukar poin -->
-    <string name="fragment_panduan_tukar_poin_title">Tukar Poin Menjadi Kupon</string>
+    <string name="fragment_panduan_tukar_poin_title">Tukar Poin Menjadi Saldo</string>
     <string name="pan_tukar_poin_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis mi vitae felis interdum tristique. Morbi fermentum, orci vitae sollicitudin semper, eros arcu pulvinar nisi, nec egestas nulla ante ut augue. In velit dolor, vulputate vel vehicula et, elementum ut libero. Proin imperdiet venenatis dapibus. Nunc accumsan diam vitae tellus mattis, sed hendrerit tortor consequat. Nulla vitae massa leo. Vivamus in elit vitae neque suscipit efficitur ac blandit velit. Donec eget enim convallis, cursus tellus vitae, luctus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu volutpat, scelerisque nulla in, pulvinar tellus. In vel pulvinar libero, vel semper enim. Quisque sed faucibus augue. Sed quis enim tempus, tincidunt urna in, convallis purus. Integer id pellentesque ligula. Duis nec elementum justo. Donec interdum molestie velit, sit amet pretium tellus. Sed vulputate ante lectus, in faucibus sapien rutrum quis. Cras varius nulla elit. Nulla varius vulputate nunc vel fermentum. Maecenas porttitor eros in placerat commodo..</string>
 
     <!-- Strings used for fragments panduan gabung mitra -->

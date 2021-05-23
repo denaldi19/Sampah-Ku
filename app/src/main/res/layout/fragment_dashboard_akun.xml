@@ -72,10 +72,12 @@
                 android:layout_marginBottom="15sp"/>
 
             <LinearLayout
+                android:id="@+id/menuUbah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
+                android:paddingBottom="15dp"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -103,10 +105,12 @@
             android:background="@drawable/borderdashboard">
 
             <LinearLayout
+                android:id="@+id/menuPanduan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:paddingTop="15dp"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -132,10 +136,12 @@
                 android:layout_marginTop="15dp"/>
 
             <LinearLayout
+                android:id="@+id/menuKebijakan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:paddingTop="15dp"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -161,10 +167,12 @@
                 android:layout_marginTop="15dp"/>
 
             <LinearLayout
+                android:id="@+id/menuVersi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:paddingTop="15dp"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -200,11 +208,13 @@
                 android:layout_marginTop="15dp"/>
 
             <LinearLayout
+                android:id="@+id/menuKeluar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:paddingTop="15dp"
-                android:paddingBottom="15dp">
+                android:paddingBottom="15dp"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="25dp"

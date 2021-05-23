@@ -19,23 +19,32 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             app:srcCompat="@drawable/sampahkulogo" />
 
         <FrameLayout
+            android:id="@+id/mainLayout"
             android:layout_width="match_parent"
-            android:layout_height="500dp"/>
+            android:layout_height="550dp"
+            android:layout_marginBottom="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:background="@drawable/custom_input2">
 
             <LinearLayout
-                android:layout_width="100dp"
+                android:id="@+id/navHome"
+                android:layout_width="92dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:clickable="true">
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -54,9 +63,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="100dp"
+                android:id="@+id/navTransac"
+                android:layout_width="92dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true">
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -75,9 +86,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="100dp"
+                android:id="@+id/navSampah"
+                android:layout_width="92dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true">
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -96,9 +109,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="100dp"
+                android:id="@+id/navAkun"
+                android:layout_width="92dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true">
 
                 <ImageView
                     android:id="@+id/imageView7"

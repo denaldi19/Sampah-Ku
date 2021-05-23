@@ -112,7 +112,6 @@ public class DashboardAkun extends Fragment {
                         popupWindow.dismiss();
                         transaction.replace(R.id.mainLayout, dashboardAkun).commit();
 
-
                     }
                 });
 

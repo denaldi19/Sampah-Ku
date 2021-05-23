@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 
 public class DashboardAkun extends Fragment {
 
-    LinearLayout menuUbah, menuPanduan, menuKebijakan, menuVersi, menuKeluar;
+    LinearLayout menuUbah, menuPanduan, menuKebijakan, menuKeluar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,7 +26,6 @@ public class DashboardAkun extends Fragment {
         menuUbah = v.findViewById(R.id.menuUbah);
         menuPanduan = v.findViewById(R.id.menuPanduan);
         menuKebijakan = v.findViewById(R.id.menuKebijakan);
-        menuVersi = v.findViewById(R.id.menuVersi);
         menuKeluar = v.findViewById(R.id.menuKeluar);
 
         menuUbah.setOnClickListener(new View.OnClickListener() {

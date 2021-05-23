@@ -258,7 +258,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5sp"
+                        android:layout_marginBottom="15dp"
                         android:src="@drawable/fotosampah" />
+
+                    <Button
+                        android:id="@+id/btn_ttp_transaksi"
+                        android:layout_width="161dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="@string/btn_tutup"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/custom_button" />
 
                 </LinearLayout>
 

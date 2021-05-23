@@ -42,6 +42,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/transaksi_list1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"

@@ -29,6 +29,7 @@
             android:layout_marginBottom="15sp"/>
 
         <LinearLayout
+            android:id="@+id/menuRegis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -47,6 +48,7 @@
 
 
         <LinearLayout
+            android:id="@+id/menuTukar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -64,6 +66,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/menuBeli"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -81,6 +84,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/menuPoin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -98,11 +102,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/menuGabung"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/custom_input">
 
             <TextView
@@ -113,6 +118,15 @@
                 android:textSize="16sp" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_panduan_kmbli"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/btn_kembali"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custom_button" />
 
     </LinearLayout>
 </FrameLayout>

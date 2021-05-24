@@ -50,6 +50,7 @@
                     android:orientation="vertical"
                     android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -79,6 +80,7 @@
                     android:layout_height="161dp"
                     android:orientation="vertical"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -117,6 +119,7 @@
                     android:orientation="vertical"
                     android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
 
@@ -147,6 +150,7 @@
                     android:layout_height="161dp"
                     android:orientation="vertical"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -185,6 +189,7 @@
                     android:orientation="vertical"
                     android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -214,6 +219,7 @@
                     android:layout_height="161dp"
                     android:orientation="vertical"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -252,6 +258,7 @@
                     android:orientation="vertical"
                     android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
 
@@ -282,6 +289,7 @@
                     android:layout_height="161dp"
                     android:orientation="vertical"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -320,6 +328,7 @@
                     android:orientation="vertical"
                     android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
 
@@ -350,6 +359,7 @@
                     android:layout_height="161dp"
                     android:orientation="vertical"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
                     <ImageView
@@ -386,8 +396,9 @@
                     android:layout_width="161dp"
                     android:layout_height="161dp"
                     android:orientation="vertical"
-                    android:layout_marginEnd="13dp"
+                    android:layout_marginEnd="30dp"
                     android:padding="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/borderdashboard">
 
 
@@ -413,7 +424,34 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="161dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
             </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>

@@ -16,9 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class DashboardAkun extends Fragment {
 
     LinearLayout menuUbah, menuPanduan, menuKebijakan, menuKeluar;
+    private FirebaseAuth mAuth;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -96,10 +99,7 @@ public class DashboardAkun extends Fragment {
                     @Override
                     public void onClick(View v) {
 
-                        DashboardAkun dashboardAkun = new DashboardAkun();
-                        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                        popupWindow.dismiss();
-                        transaction.replace(R.id.mainLayout, dashboardAkun).commit();
+                        mAuth.signOut();
 
                     }
                 });
@@ -108,5 +108,11 @@ public class DashboardAkun extends Fragment {
         });
 
         return v;
+    }
+
+    public void signOut() {
+        // [START auth_sign_out]
+        FirebaseAuth.getInstance().signOut();
+        // [END auth_sign_out]
     }
 }

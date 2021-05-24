@@ -65,6 +65,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="vertical"
+                android:background="@drawable/custom_input2" />
+
+            <LinearLayout
                 android:id="@+id/menuUbah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,6 +130,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="vertical"
+                android:background="@drawable/custom_input2" />
+
+            <LinearLayout
                 android:id="@+id/menuKebijakan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -147,6 +159,12 @@
                     android:textColor="@color/colorBlack" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="vertical"
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuVersi"
@@ -182,6 +200,12 @@
                     android:paddingEnd="10dp"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="vertical"
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuKeluar"

@@ -25,7 +25,8 @@
         <FrameLayout
             android:id="@+id/mainLayout"
             android:layout_width="match_parent"
-            android:layout_height="540dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_marginBottom="10dp"/>
 
         <LinearLayout
@@ -40,10 +41,11 @@
 
             <LinearLayout
                 android:id="@+id/navHome"
-                android:layout_width="92dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:layout_weight="1"
                 android:clickable="true">
 
                 <ImageView
@@ -64,9 +66,10 @@
 
             <LinearLayout
                 android:id="@+id/navTransac"
-                android:layout_width="92dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_weight="1"
                 android:clickable="true">
 
                 <ImageView
@@ -87,9 +90,10 @@
 
             <LinearLayout
                 android:id="@+id/navSampah"
-                android:layout_width="92dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_weight="1"
                 android:clickable="true">
 
                 <ImageView
@@ -110,9 +114,10 @@
 
             <LinearLayout
                 android:id="@+id/navAkun"
-                android:layout_width="92dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_weight="1"
                 android:clickable="true">
 
                 <ImageView

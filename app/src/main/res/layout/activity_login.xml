@@ -54,7 +54,7 @@
             android:background="@drawable/custom_input"
             android:ems="10"
             android:hint="Kata Sandi"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/button"

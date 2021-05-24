@@ -59,6 +59,8 @@ public class TukarSampah extends Fragment {
         lanjut = v.findViewById(R.id.lanjut);
 
 
+
+
         if (ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(getActivity(),

@@ -159,22 +159,12 @@
                         android:layout_marginTop="5sp"
                         android:text="Selasa, 25 Mei 2021" />
 
-                    <TextView
-                        android:id="@+id/textView43"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15sp"
-                        android:text="Foto Sampah yang ingin di Tukar"
-                        android:textColor="@color/colorBlack"
-                        android:textStyle="bold"/>
-
                     <ImageView
                         android:id="@+id/imageView12"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginTop="5sp"
-                        android:layout_weight="1"
-                        android:src="" />
+                        android:layout_weight="1"/>
 
                     <Button
                         android:id="@+id/btnKonfirmasiTkrSampah"

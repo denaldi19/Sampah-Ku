@@ -27,6 +27,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+
 public class UbahProfil extends Fragment {
 
     private FirebaseAuth mAuth;
@@ -97,6 +99,11 @@ public class UbahProfil extends Fragment {
             @Override
             public void onClick(View v) {
 
+                String ubahNamaPengguna = ubahNama.getText().toString();
+                String ubahEmailPengguna = ubahEmail.getText().toString();
+                String ubahSandiPengguna = ubahSandi.getText().toString();
+                String ubahSandiPengguna2 = ubahSandi2.getText().toString();
+
                 LayoutInflater inflater = (LayoutInflater)
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_ubah_profil, null);
@@ -127,6 +134,12 @@ public class UbahProfil extends Fragment {
                         DashboardAkun dashboardAkun = new DashboardAkun();
                         FragmentTransaction transaction = getFragmentManager().beginTransaction();
                         popupWindow.dismiss();
+                        HashMap hashMap = new HashMap();
+                        hashMap.put("namaPengguna", ubahNamaPengguna);
+                        hashMap.put("emailPengguna", ubahEmailPengguna);
+                        hashMap.put("sandiPengguna", ubahSandiPengguna);
+
+                        reference.child(userID).updateChildren(hashMap);
                         transaction.replace(R.id.mainLayout, dashboardAkun).commit();
 
 

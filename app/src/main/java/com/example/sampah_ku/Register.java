@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -41,23 +42,7 @@ public class Register extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference reference;
     ProgressBar progressBar;
-
-
     private String s_nama, s_email, s_sandi, s_sandi2;
-
-
-    private static final Pattern PASSWORD_PATTERN =
-            Pattern.compile("^" +
-                    "(?=.*[0-9])" +         //at least 1 digit
-                    //"(?=.*[a-z])" +         //at least 1 lower case letter
-                    //"(?=.*[A-Z])" +         //at least 1 upper case letter
-                    "(?=.*[a-zA-Z])" +      //any letter
-                    //"(?=.*[@#$%^&+=])" +    //at least 1 special character
-                    "(?=\\S+$)" +           //no white spaces
-                    ".{4,}" +               //at least 4 characters
-                    "$");
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,105 +60,98 @@ public class Register extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
-        if(firebaseAuth.getCurrentUser() != null ){
-            finish();
-        }
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                registerUser();
+
+            }
+        });
 
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(getApplicationContext(),Login.class));
+
             }
         });
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                progressBar.setVisibility(View.VISIBLE);
-                firebaseDatabase = FirebaseDatabase.getInstance();
-                reference = firebaseDatabase.getReference("User");
 
-                reference.setValue("Coba coba saja");
+    }
 
-                if (validasiEmail() | validasinamapengguna() | validasipassword() | validasipassword2()){
-                    firebaseDatabase = FirebaseDatabase.getInstance();
-                    reference = firebaseDatabase.getReference("User");
+    private void registerUser() {
+        String uNama = nama.getText().toString().trim();
+        String uEmail = email.getText().toString().trim();
+        String uSandi = sandi.getText().toString().trim();
+        String uSandi2 = sandi2.getText().toString().trim();
+        String uPoin = "50000";
 
-//                    s_email = email.getText().toString().trim();
-//                    s_nama = nama.getText().toString().trim();
-//                    s_sandi = sandi.getText().toString().trim();
+        if (uNama.isEmpty()) {
+            nama.setError("Isi nama lengkap Anda!");
+            nama.requestFocus();
+            return;
+        }
 
-                    //UserHelperClass userHelperClass = new UserHelperClass(s_nama,s_email,s_sandi);
+        if (uEmail.isEmpty()) {
+            email.setError("Isi alamat email Anda!");
+            email.requestFocus();
+            return;
+        }
 
-                    reference.setValue("Coba coba saja");
+        if (uSandi.isEmpty()) {
+            sandi.setError("Isi kata sandi Anda!");
+            sandi.requestFocus();
+            return;
+        }
 
-                    firebaseAuth.createUserWithEmailAndPassword(s_email,s_sandi).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful()){
-                                Toast.makeText(Register.this, "Akun Berhasil Dibuat", Toast.LENGTH_LONG).show();
-                                startActivity(new Intent(getApplicationContext(),Login.class));
-                            }else {
-                                Toast.makeText(Register.this, "Error ! " +task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            }
+        if (!Patterns.EMAIL_ADDRESS.matcher(uEmail).matches()) {
+            email.setError("Masukkan email Anda dengan benar!");
+            email.requestFocus();
+            return;
+        }
+
+        if (uSandi.length() < 6) {
+            sandi.setError("Masukkan kata sandi Anda minimal 6 karakter!");
+            sandi.requestFocus();
+            return;
+        }
+
+        if (!uSandi.equals(uSandi2)) {
+            sandi2.setError("Masukkan kata sandi yang sama!");
+            sandi2.requestFocus();
+            return;
+        }
+
+        firebaseAuth.createUserWithEmailAndPassword(uEmail, uSandi)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if (task.isSuccessful()) {
+                            User user = new User(uNama, uEmail, uSandi, uPoin);
+
+                            FirebaseDatabase.getInstance().getReference("Users")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(Register.this, "Akun berhasil dibuat!", Toast.LENGTH_LONG).show();
+                                        nama.setText("");
+                                        email.setText("");
+                                        sandi.setText("");
+                                        sandi2.setText("");
+                                        startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                                    }
+                                }
+                            });
+                        }else {
+                            Toast.makeText(Register.this, "Akun tidak berhasil dibuat!", Toast.LENGTH_LONG).show();
                         }
-                    });
-                }
-                //progressBar.setVisibility(View.INVISIBLE);
-            }
-        });
-
+                    }
+                });
     }
-    private boolean validasiEmail() {
-        s_email = email.getText().toString().trim();
-        if (s_email.isEmpty()) {
-            email.setError("Masukkan email");
-            return false;
-        } else if (!Patterns.EMAIL_ADDRESS.matcher(s_email).matches()) {
-            email.setError("Masukkan email yang valid");
-            return false;
-        } else {
-            email.setError(null);
-            return true;
-        }
-    }
-
-    private boolean validasinamapengguna() {
-        s_nama = nama.getText().toString().trim();
-        if (s_nama.isEmpty()) {
-            nama.setError("Masukkan nama");
-            return false;
-        } else {
-            nama.setError(null);
-            return true;
-        }
-    }
-
-    private boolean validasipassword() {
-        s_sandi = sandi.getText().toString().trim();
-        if (s_sandi.isEmpty()) {
-            sandi.setError("Masukkan password");
-            return false;
-        } else if (!PASSWORD_PATTERN.matcher(s_sandi).matches()) {
-            sandi.setError("Password terlalu lemah");
-            return false;
-        } else {
-            sandi.setError(null);
-            return true;
-        }
-    }
-    private boolean validasipassword2() {
-        s_sandi2 = sandi2.getText().toString().trim();
-        if (s_sandi2.isEmpty()) {
-            sandi2.setError("Masukkan konfirmasi password");
-            return false;
-        } else if (!s_sandi.equals(s_sandi2)) {
-            sandi2.setError("Password terlalu lemah");
-            return false;
-        } else {
-            sandi2.setError(null);
-            return true;
-        }
-    }
-
 }

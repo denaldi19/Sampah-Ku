@@ -3,6 +3,7 @@ package com.example.sampah_ku;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -12,12 +13,28 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class UbahProfil extends Fragment {
 
+    private FirebaseAuth mAuth;
+    private FirebaseUser pengguna;
+    private DatabaseReference reference;
+
+    private String userID;
+    EditText ubahNama, ubahEmail, ubahSandi, ubahSandi2;
     Button btnKembali, btnSimpan;
 
     @Override
@@ -29,6 +46,41 @@ public class UbahProfil extends Fragment {
 
         btnKembali = v.findViewById(R.id.btn_ubah_batal);
         btnSimpan = v.findViewById(R.id.btn_ttp_ubah_profil);
+
+        pengguna = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        userID = pengguna.getUid();
+
+        ubahNama = v.findViewById(R.id.ubah_nama);
+        ubahEmail = v.findViewById(R.id.ubah_email);
+        ubahSandi = v.findViewById(R.id.ubah_password);
+        ubahSandi2 = v.findViewById(R.id.ubah_reTypePass);
+
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                User userProfile = snapshot.getValue(User.class);
+
+                if (userProfile != null) {
+                    String namaPengguna = userProfile.namaPengguna;
+                    String emailPengguna = userProfile.emailPengguna;
+                    String sandiPengguna = userProfile.sandiPengguna;
+                    String sandiPengguna2 = userProfile.sandiPengguna;
+
+                    ubahNama.setText(namaPengguna);
+                    ubahEmail.setText(emailPengguna);
+                    ubahSandi.setText(sandiPengguna);
+                    ubahSandi2.setText(sandiPengguna2);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                //Toast.makeText(UbahProfil.this, "Terdapat permasalahan!", Toast.LENGTH_LONG).show();
+            }
+        });
 
         btnKembali.setOnClickListener(new View.OnClickListener() {
             @Override

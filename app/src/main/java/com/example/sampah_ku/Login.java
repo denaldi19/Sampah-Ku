@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -38,16 +39,13 @@ public class Login extends AppCompatActivity {
         login = findViewById(R.id.button);
 
         daftar.setOnClickListener(v -> {
-            Toast.makeText(Login.this, "Cek", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(),Register.class));
         });
 
         login.setOnClickListener(v -> {
-            Toast.makeText(Login.this, "Cek", Toast.LENGTH_SHORT).show();
             signIn(email.getText().toString(), sandi.getText().toString());
         });
     }
-
 
     @Override
     public void onStart() {
@@ -59,8 +57,8 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    private void signIn(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password)
+    private void signIn(String emailPengguna, String password) {
+        mAuth.signInWithEmailAndPassword(emailPengguna, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -68,6 +66,9 @@ public class Login extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            email.setText("");
+                            sandi.setText("");
+                            getUserProfile();
                             startActivity(new Intent(getApplicationContext(),Dashboard.class));
                         } else {
                             // If sign in fails, display a message to the user.
@@ -77,6 +78,23 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    public void getUserProfile() {
+        // [START get_user_profile]
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // Name, email address, and profile photo Url
+            String name = user.getDisplayName();
+            String email = user.getEmail();
+            Uri photoUrl = user.getPhotoUrl();
+
+            // Check if user's email is verified
+            boolean emailVerified = user.isEmailVerified();
+
+            String uid = user.getUid();
+        }
+        // [END get_user_profile]
     }
 
     private void reload() {

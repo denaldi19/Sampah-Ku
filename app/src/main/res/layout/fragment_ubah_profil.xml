@@ -48,7 +48,7 @@
                 android:id="@+id/ubah_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/user1"
+
                 android:textSize="16sp"
                 android:background="@null"/>
 
@@ -74,7 +74,7 @@
                 android:id="@+id/ubah_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/email1"
+
                 android:textSize="16sp"
                 android:background="@null"/>
 
@@ -100,7 +100,6 @@
                 android:id="@+id/ubah_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pass1"
                 android:textSize="16sp"
                 android:background="@null"/>
 
@@ -126,7 +125,7 @@
                 android:id="@+id/ubah_reTypePass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pass1"
+
                 android:textSize="16sp"
                 android:background="@null"/>
 

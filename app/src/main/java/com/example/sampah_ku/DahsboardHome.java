@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,6 +28,7 @@ public class DahsboardHome extends Fragment {
     private String userID;
     TextView txtNamaPengguna, txtPoinPengguna;
     Button btnTukarSampah;
+    LinearLayout produk1, produk2, produk3, saldo1, saldo2, saldo3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,6 +45,12 @@ public class DahsboardHome extends Fragment {
 
         txtNamaPengguna = v.findViewById(R.id.textView3);
         txtPoinPengguna = v.findViewById(R.id.textView11);
+        saldo1 = v.findViewById(R.id.saldo1);
+        saldo2 = v.findViewById(R.id.saldo2);
+        saldo3 = v.findViewById(R.id.saldo3);
+        produk1 = v.findViewById(R.id.produk1);
+        produk2 = v.findViewById(R.id.produk2);
+        produk3 = v.findViewById(R.id.produk3);
 
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -73,6 +81,28 @@ public class DahsboardHome extends Fragment {
                 TukarSampah tukarSampah = new TukarSampah();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.mainLayout, tukarSampah).commit();
+
+            }
+        });
+
+        produk1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BeliProduk beliProduk = new BeliProduk();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.mainLayout, beliProduk).commit();
+
+            }
+        });
+
+        saldo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                TukarPoinSaldoGopay tukarPoinSaldoGopay = new TukarPoinSaldoGopay();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.mainLayout, tukarPoinSaldoGopay).commit();
 
             }
         });

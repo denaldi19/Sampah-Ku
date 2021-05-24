@@ -68,14 +68,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:orientation="vertical"
-                android:background="@drawable/custom_input2"
-                android:layout_marginBottom="15sp"/>
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuUbah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingTop="15dp"
                 android:paddingBottom="15dp"
                 android:clickable="true">
 
@@ -110,6 +110,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:paddingTop="15dp"
+                android:paddingBottom="15dp"
                 android:clickable="true">
 
                 <ImageView
@@ -132,8 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:orientation="vertical"
-                android:background="@drawable/custom_input2"
-                android:layout_marginTop="15dp"/>
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuKebijakan"
@@ -141,6 +141,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:paddingTop="15dp"
+                android:paddingBottom="15dp"
                 android:clickable="true">
 
                 <ImageView
@@ -163,8 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:orientation="vertical"
-                android:background="@drawable/custom_input2"
-                android:layout_marginTop="15dp"/>
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuVersi"
@@ -172,6 +172,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:paddingTop="15dp"
+                android:paddingBottom="15dp"
                 android:clickable="true">
 
                 <ImageView
@@ -204,8 +205,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:orientation="vertical"
-                android:background="@drawable/custom_input2"
-                android:layout_marginTop="15dp"/>
+                android:background="@drawable/custom_input2" />
 
             <LinearLayout
                 android:id="@+id/menuKeluar"

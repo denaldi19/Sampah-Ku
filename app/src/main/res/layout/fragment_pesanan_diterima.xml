@@ -57,7 +57,7 @@
                 android:textStyle="bold"/>
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btnDaftarTransaksi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="lihat daftar transaksi"
@@ -65,7 +65,7 @@
                 android:textColor="@color/colorWhite"/>
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btnKembali2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Kembali"

@@ -50,13 +50,21 @@
                     android:layout_marginBottom="10dp"/>
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/jenisSampah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_input"
                     android:text="Pilih Sampah Plastik"
                     android:textColor="#1761A0"
                     android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/textSampah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/textView18"
@@ -116,21 +124,21 @@
                     android:layout_marginBottom="10dp">
 
                     <Button
-                        android:id="@+id/button4"
+                        android:id="@+id/pilihTanggal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/custom_input"
-                        android:text="Hari" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:background="@drawable/custom_input"
-                        android:text="Tanggal" />
+                        android:text="Pilih Tanggal"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/txtTanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="dd-MM-yyyy" />
                 </LinearLayout>
 
                 <TextView
@@ -142,8 +150,15 @@
                     android:layout_marginBottom="10dp"
                     android:text="Foto Sampah yang ingin di Tukar" />
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/fotosampah"
+                    />
+
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/btnUnggahFoto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
@@ -152,14 +167,14 @@
                     android:textColor="#1761A0"/>
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/lanjut"
                     android:layout_width="150sp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10sp"
                     android:layout_gravity="center"
                     android:text="lanjut"
                     android:textColor="#FFFFFF"
-                    android:background="@drawable/custom_button"/>
+                    android:background="@drawable/custom_button" />
 
                 <Button
                     android:id="@+id/button8"

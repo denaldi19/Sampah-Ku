@@ -59,17 +59,6 @@ public class Panduan extends Fragment {
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_registrasi, null);
 
-                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-
-                // define your view here that found in popup_layout
-                // for example let consider you have a button
-
-                //Button btn = (Button) popupView.findViewById(R.id.button);
-
-                // finally show up your popwindow
-                //popupWindow.showAsDropDown(popupView);
-
                 int width = LinearLayout.LayoutParams.MATCH_PARENT;
                 int height = LinearLayout.LayoutParams.MATCH_PARENT;
                 boolean focusable = true; // lets taps outside the popup also dismiss it
@@ -94,17 +83,6 @@ public class Panduan extends Fragment {
                 LayoutInflater inflater = (LayoutInflater)
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_tukar_sampah, null);
-
-                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-
-                // define your view here that found in popup_layout
-                // for example let consider you have a button
-
-                //Button btn = (Button) popupView.findViewById(R.id.button);
-
-                // finally show up your popwindow
-                //popupWindow.showAsDropDown(popupView);
 
                 int width = LinearLayout.LayoutParams.MATCH_PARENT;
                 int height = LinearLayout.LayoutParams.MATCH_PARENT;
@@ -131,17 +109,6 @@ public class Panduan extends Fragment {
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_beli_produk, null);
 
-                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-
-                // define your view here that found in popup_layout
-                // for example let consider you have a button
-
-                //Button btn = (Button) popupView.findViewById(R.id.button);
-
-                // finally show up your popwindow
-                //popupWindow.showAsDropDown(popupView);
-
                 int width = LinearLayout.LayoutParams.MATCH_PARENT;
                 int height = LinearLayout.LayoutParams.MATCH_PARENT;
                 boolean focusable = true; // lets taps outside the popup also dismiss it
@@ -167,17 +134,6 @@ public class Panduan extends Fragment {
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_tukar_poin, null);
 
-                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-
-                // define your view here that found in popup_layout
-                // for example let consider you have a button
-
-                //Button btn = (Button) popupView.findViewById(R.id.button);
-
-                // finally show up your popwindow
-                //popupWindow.showAsDropDown(popupView);
-
                 int width = LinearLayout.LayoutParams.MATCH_PARENT;
                 int height = LinearLayout.LayoutParams.MATCH_PARENT;
                 boolean focusable = true; // lets taps outside the popup also dismiss it
@@ -202,17 +158,6 @@ public class Panduan extends Fragment {
                 LayoutInflater inflater = (LayoutInflater)
                         getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup popupView = (ViewGroup) inflater.inflate(R.layout.popup_panduan_gabung_mitra, null);
-
-                //View popupView = LayoutInflater.from(getActivity()).inflate(R.layout.popup_panduan_registrasi, null);
-                //final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-
-                // define your view here that found in popup_layout
-                // for example let consider you have a button
-
-                //Button btn = (Button) popupView.findViewById(R.id.button);
-
-                // finally show up your popwindow
-                //popupWindow.showAsDropDown(popupView);
 
                 int width = LinearLayout.LayoutParams.MATCH_PARENT;
                 int height = LinearLayout.LayoutParams.MATCH_PARENT;

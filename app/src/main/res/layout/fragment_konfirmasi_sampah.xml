@@ -171,12 +171,13 @@
                     <ImageView
                         android:id="@+id/imageView12"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_marginTop="5sp"
-                        android:src="@drawable/fotosampah" />
+                        android:layout_weight="1"
+                        android:src="" />
 
                     <Button
-                        android:id="@+id/button9"
+                        android:id="@+id/btnKonfirmasiTkrSampah"
                         android:layout_width="200sp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -186,7 +187,7 @@
                         android:textColor="@color/colorWhite" />
 
                     <Button
-                        android:id="@+id/button10"
+                        android:id="@+id/btnKembali"
                         android:layout_width="200sp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

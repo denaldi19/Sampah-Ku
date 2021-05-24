@@ -3,7 +3,7 @@
     package="com.example.sampah_ku">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CAMERA"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/sampahkulogo"
@@ -11,12 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dashboard">
-        </activity>
-        <activity
-            android:name=".Register"
-            android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PopupJenisSampah"></activity>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".Register"></activity>
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
